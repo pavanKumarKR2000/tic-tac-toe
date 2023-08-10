@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wellfleet&display=swap");
 
-* {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -37,11 +39,14 @@
 }
 
 .tile {
-  display: grid;
-  place-items: center;
+  height: 200px !important;
+  width: 200px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: 1px solid black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
 }
 .container {
@@ -133,18 +138,22 @@
 
 .x-hover:hover::after {
   content: "X";
-  position: absolute;
-  inset: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
+  font-size: 2.5rem;
 }
 
 .o-hover:hover::after {
   content: "O";
-  position: absolute;
-  inset: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
+  font-size: 2.5rem;
 }
