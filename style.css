@@ -126,14 +126,17 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .hidden {
-  display: none !important;
+  /* display: none !important; */
+  opacity: 0;
 }
 
 .visible {
-  display: block !important;
+  /* display: flex !important; */
+  opacity: 1;
 }
 
 .x-hover:hover::after {
